@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: HoyJavaCloudant
+  host: HoyJavaCloudant
+  disk_quota: 1024M
+  services:
+  - HoyJavaCloudant-cloudantNoSQLDB
+  - Monitoring and Analytics-5x
